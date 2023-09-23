@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</head>
+<body style="background-color: #E2CD97">
+
+<div class="container">
+    <div class="row">
+        <img src="https://i.pinimg.com/564x/b0/6b/60/b06b6079946c2dcf39e045d59c1db915.jpg" class="col-5">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+<div class="col-md-6 " style="border-color: black">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+      <h2>Login</h2>
+      <form method="post" >
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+        </div>
+          <br>
+        <button type="submit" class="btn btn text-white" style="background-color: green;">Login</button>
+      </form>
+    <br>
+      <p>Don't have an account? <a href="{% url 'registration' %}">Sign up </a> as a customer.</p>
+    <br>
+      <p>Најава за продавач <a href="/admin/" class="btn text-white" style="background-color: darkgreen"> Login </a></p>
+
+    </div>
+</body>
+</html>
