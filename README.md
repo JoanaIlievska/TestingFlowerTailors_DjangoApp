@@ -1,1 +1,1 @@
-# TestingFlowerTailors_DjangoApp
+# Testing Django Application using the PyTest framework.
